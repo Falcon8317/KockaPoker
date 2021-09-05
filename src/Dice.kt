@@ -25,7 +25,6 @@ class Dice {
         dices.add(fifthDice)
         println("Az ötödik kocka értéke: $fifthDice")
         dices.sort()
-        println(dices)
     }
 
     fun winningCheck() :Int {
