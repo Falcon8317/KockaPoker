@@ -26,7 +26,7 @@ class DiceTest {
 
     @Test
     fun checkingFiveOfAKind () {
-        assertEquals(9,dice.winningCheck())
+        assertEquals(15,dice.winningCheck())
     }
 
     @Test
