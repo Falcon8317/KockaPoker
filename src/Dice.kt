@@ -31,7 +31,8 @@ class Dice {
         if(dices[0] == dices[1] && dices[0] == dices[2] && dices[0] == dices[3] && dices[0] == dices[4] ) {
             return 15
         }
-        else if(dices[0] == dices[1] && dices[0] == dices[2] && dices[0] == dices[3]) {
+        else if(dices[0] == dices[1] && dices[0] == dices[2] && dices[0] == dices[3] ||
+                dices[1] == dices[2] && dices[1] == dices[3] && dices[1] == dices[4]) {
             return  9
         }
         else if (dices[0] == dices[1] && dices[0] == dices[2] && dices[3] == dices[4]) {
