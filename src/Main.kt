@@ -1,7 +1,4 @@
-import java.util.Scanner
-
 fun main() {
-    val sc = Scanner(System.`in`)
     val dice = Dice()
     var money = 100
     var betMoney: Int
@@ -12,13 +9,11 @@ fun main() {
     do{
     println("A jelenlegi pénzed: $money")
     print("Mennyit teszel meg tétnek?: ")
-    betMoney = sc.nextInt()
+    betMoney = readLine()!!.toInt()
         if(betMoney > money) {
             println("Sajnos nincs ennyi pénzed!")
             print("Mennyit teszel meg tétnek?: ")
-            betMoney = sc.nextInt()
-        }else if(betMoney <= money){
-            println("A téted $betMoney ")
+            betMoney = readLine()!!.toInt()
         }
 
     dice.throwDices()
@@ -79,7 +74,7 @@ fun main() {
         }
         println("Nyomj 1-t ha tovább szeretnél játszani, a kilépéshez pedig 2-t")
         dice.dices.clear()
-        decision = sc.nextInt()
+        decision = readLine()!!.toInt()
 
 }
     while(decision != 2)
